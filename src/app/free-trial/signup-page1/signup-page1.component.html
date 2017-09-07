@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form>
+        <!-- radio group -->
+        <label for="">How many Spend! cards do think you will need?</label>
+        <div class="form-check ml-5">
+          <input class="form-check-input" type="radio" name="cards" value="one"> One (Freelancers and Personal users)k
+        </div>
+        <div class="form-check ml-5">
+          <input class="form-check-input" type="radio" name="cards" value="many"> Multiple (Companies, Teams, Families and
+          Accountants)
+        </div>
+        <!-- radio group -->
+        <label class="mt-4" for="">What type of user are you?</label>
+        <div class="form-check ml-5">
+          <input class="form-check-input" type="radio" name="user_type" value="accountant"> Accountant
+        </div>
+        <div class="form-check ml-5">
+          <input class="form-check-input" type="radio" name="user_type" value="company"> Company
+        </div>
+        <div class="form-check ml-5">
+          <input class="form-check-input" type="radio" name="user_type" value="Sole Trader"> Sole Trader
+        </div>
+        <div class="form-check ml-5">
+          <input class="form-check-input" type="radio" name="user_type" value="personal"> I want a card for personal use
+        </div>
+        <div class="form-group mt-5">
+          <label for="">Company or Trading name</label>
+          <div class="input-group">
+            <input type="text" class="form-control">
+            <span class="input-group-addon"><i class="fa fa-star"></i></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">Company Number</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Email</label>
+          <div class="input-group">
+            <input type="text" class="form-control">
+            <span class="input-group-addon"><i class="fa fa-star"></i></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="platforms">Accounting Platform</label>
+          <select id="platforms" class="form-control">
+            <option value="0">--</option>
+            <option value="1">Crunch</option>
+            <option value="2">Quickbooks</option>
+            <option value="3">Sage</option>
+            <option value="4">Xero</option>
+            <option value="5">Other</option>
+            <option value="6">I don't use one</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <a class="btn btn-success" [routerLink]="['/free-trial', {outlets: {signup: 'page2'}}]">Next</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
