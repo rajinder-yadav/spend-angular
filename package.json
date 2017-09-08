@@ -1,5 +1,6 @@
 {
   "name": "spend",
+  "homepage": "https://rajinder-yadav.github.io/spend-angular/how-why",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -9,7 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "host": "ng build --prod --base-href=\"https://rajinder-yadav.github.io/spend-angular/\" && ngh"
+    "predeploy": "ng build --prod --base-href=\"https://rajinder-yadav.github.io/spend-angular/\"",
+    "deploy": "ngh"
   },
   "private": true,
   "dependencies": {
